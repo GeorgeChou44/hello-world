@@ -1,0 +1,1650 @@
+<br>
+<br>
+<br>
+
+<h1>
+  公佈欄(Bulletin Board)</h1>
+<p align="right">
+  <a href="ODocMenu.aspx">回主畫面(Home Page)</a> <a onclick="cmdClose()" href="#">登出(Log out)</a>
+</p>
+<form action="ODocBulletin.asp" method="post" id="frmODocBulletin" name="frmODocBulletin">
+  <input type="hidden" id="ODocId" name="ODocId" />
+  <input type="hidden" id="OutFlag" name="OutFlag" />
+  <input type="hidden" id="FromAsp" name="FromAsp" />
+  <input type="hidden" id="Type" name="Type" />
+  <input type="hidden" id="hidBulletin" name="hidBulletin" value="Y" />
+
+  <!--/*************20190604 新增公佈海外欄位************/-->
+  <input type="hidden" id="hidOutFlag" name="hidOutFlag" value="" />
+
+
+  <table style="border:0px;width:100%">
+    <tr>
+      <!--<td style="border:3px;text-align:right">是否發佈海外單位(Announce to overseas units (Y/N))</td>-->
+      <td style="border:0px;text-align:right">發佈海外(Announce to overseas)
+        <span ID="sOutFlag">
+          <select ID="selOutFlag" name="selOutFlag" class="KeyText" onchange="selOutFlag_change()">
+            <option selected value="">0 全部(All)</option>
+            <option value="O">1 是(Yes)</option>
+            <option value="I">2 否(No)</option>
+          </select>
+        </span>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <!--/*************20190604 新增公佈海外欄位END************/-->
+
+  <table id="tblODoc" align="center">
+    <tr>
+      <th>
+        文件編號<br />(Reference No)
+      </th>
+      <th>
+        發文日期<br />(Date of issuance)
+      </th>
+      <th>
+        發文時間<br />(Time of issuance)
+      </th>
+
+      <th width="20%">
+        承辦單位<br />(Responsible unit)
+      </th>
+
+      <th>
+        搜尋主旨<br />(Search subject)
+      </th>
+
+      <th>
+        <!-- by Gary 20190528 0009810800016 -->
+        <!-- 適用海外<br />(Overseas<br />applicable) -->
+        發佈海外<br />(Announce<br />to overseas)
+      </th>
+
+    </tr>
+
+    <tr>
+      <td id='0001710800179' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0001710800179
+      </td>
+      <td style="text-align:center;">
+        20190808
+      </td>
+      <td style="text-align:center;">
+        200505
+      </td>
+      <td>
+        資訊服務暨支援部[IT Service Management and Support Dept.]
+      </td>
+      <td>
+        公告本行【個人電腦外接儲存裝置】新增管控措施相關說明，惠請查照。
+
+      </td>
+
+      <td style="text-align:center;">
+        Y
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='0001310801734' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0001310801734
+      </td>
+      <td style="text-align:center;">
+        20190808
+      </td>
+      <td style="text-align:center;">
+        195301
+      </td>
+      <td>
+        人力資源部[Human Resources Dept.]
+      </td>
+      <td>
+        公告私人銀行部姚志偉等18名人員異動，請 查照。
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='0001310801732' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0001310801732
+      </td>
+      <td style="text-align:center;">
+        20190808
+      </td>
+      <td style="text-align:center;">
+        195210
+      </td>
+      <td>
+        人力資源部[Human Resources Dept.]
+      </td>
+      <td>
+        【正式任用】公告私人銀行部經理張平波等25名人員正式任用，請查照。
+
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='0009710800416' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0009710800416
+      </td>
+      <td style="text-align:center;">
+        20190808
+      </td>
+      <td style="text-align:center;">
+        191052
+      </td>
+      <td>
+        數位銀行部[Digital Banking Dept.]
+      </td>
+      <td>
+        公佈網銀密碼升級為6~16位英數混合密碼，並與電話銀行系統分開管理之說明，請查照。
+
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='8080210800272' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        8080210800272
+      </td>
+      <td style="text-align:center;">
+        20190808
+      </td>
+      <td style="text-align:center;">
+        181317
+      </td>
+      <td>
+        存匯作業管理部[Cash Management Operations Dept.]
+      </td>
+      <td>
+        公告修訂後「國泰世華商業銀行委外作業管理規則」，請 查照。
+        This is to announce the amended “Outsourcing Rules, Cathay United Bank”.
+      </td>
+
+      <td style="text-align:center;">
+        Y
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='0000910800160' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0000910800160
+      </td>
+      <td style="text-align:center;">
+        20190808
+      </td>
+      <td style="text-align:center;">
+        161247
+      </td>
+      <td>
+        職業安全衛生部[Occupational Safety &amp; Health Dept.]
+      </td>
+      <td>
+        【職安委員會】公佈本行職業安全衛生委員會第7屆第5次會議記錄
+
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='0001210800404' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0001210800404
+      </td>
+      <td style="text-align:center;">
+        20190808
+      </td>
+      <td style="text-align:center;">
+        140931
+      </td>
+      <td>
+        財務會計部[Finance &amp; Accounting Dept.]
+      </td>
+      <td>
+        【驗收通知】資產負債管理(ALM)暨資金轉撥計價(FTP)業務諮詢及系統建置專案
+
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='0000910800104' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0000910800104
+      </td>
+      <td style="text-align:center;">
+        20190808
+      </td>
+      <td style="text-align:center;">
+        105705
+      </td>
+      <td>
+        職業安全衛生部[Occupational Safety &amp; Health Dept.]
+      </td>
+      <td>
+
+        謹訂於108年9月10日總行大樓舉辦「科技體適能檢測活動」，歡迎同仁踴躍報名參加。
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='0000910800162' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0000910800162
+      </td>
+      <td style="text-align:center;">
+        20190808
+      </td>
+      <td style="text-align:center;">
+        105631
+      </td>
+      <td>
+        職業安全衛生部[Occupational Safety &amp; Health Dept.]
+      </td>
+      <td>
+        公布108年8月17日(六)辦理國泰親子愛互動嘉年華，邀請同仁踴躍參與。
+      </td>
+
+      <td style="text-align:center;">
+        Y
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='0001310801699' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0001310801699
+      </td>
+      <td style="text-align:center;">
+        20190807
+      </td>
+      <td style="text-align:center;">
+        194828
+      </td>
+      <td>
+        人力資源部[Human Resources Dept.]
+      </td>
+      <td>
+        公告消金審查部高級專員余佳勳等2人復職案，詳如說明，請 查照。
+
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='0000410800174' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0000410800174
+      </td>
+      <td style="text-align:center;">
+        20190807
+      </td>
+      <td style="text-align:center;">
+        183108
+      </td>
+      <td>
+        法務部[Legal Affairs Dept.]
+      </td>
+      <td>
+        【名單更新】依本行「外部律師事務所及律師委任管理要點」公告律師事務所建議名單，詳如說明，請 查照。
+
+      </td>
+
+      <td style="text-align:center;">
+        Y
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='0009010800221' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0009010800221
+      </td>
+      <td style="text-align:center;">
+        20190807
+      </td>
+      <td style="text-align:center;">
+        142313
+      </td>
+      <td>
+        信用暨作業風管部[Risk Management Dept.]
+      </td>
+      <td>
+        檢送本行修訂後之「有價證券融資上限管理規則」，請　查照。
+
+      </td>
+
+      <td style="text-align:center;">
+        Y
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='9999910802024' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        9999910802024
+      </td>
+      <td style="text-align:center;">
+        20190807
+      </td>
+      <td style="text-align:center;">
+        135429
+      </td>
+      <td>
+        保險代理部[Insurance Agency Dept.]
+      </td>
+      <td>
+        有關衛生福利部社會及家庭署就原執舊制未註記效期身心障礙手冊者逾108年7月10日未換發新式身心障礙證明之有效性予以釋疑乙案。
+
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='9999910801989' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        9999910801989
+      </td>
+      <td style="text-align:center;">
+        20190807
+      </td>
+      <td style="text-align:center;">
+        131047
+      </td>
+      <td>
+        資訊策略發展部[IT Strategy Dept.]
+      </td>
+      <td>
+        金融監督管理委員會銀行局轉經濟部國貿局函，有關義大利銀行協會副總裁Mr.Mario Cataldo擬透過技術移轉模式與我國金融機構建立合作關係乙案，敬請參酌。
+
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='8010010800185' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        8010010800185
+      </td>
+      <td style="text-align:center;">
+        20190807
+      </td>
+      <td style="text-align:center;">
+        100305
+      </td>
+      <td>
+        金融行銷部[Financial Marketing Dept.]
+      </td>
+      <td>
+
+        公告增訂本行「金融商品交易作業要點」及修訂本行「結構型商品作業要點」，並自公告日起實施，惠請 查照辦理。
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='0001310801658' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0001310801658
+      </td>
+      <td style="text-align:center;">
+        20190806
+      </td>
+      <td style="text-align:center;">
+        200339
+      </td>
+      <td>
+        人力資源部[Human Resources Dept.]
+      </td>
+      <td>
+        公告系統開發部黃偲綺等13名人員到職及異動，請 查照。
+
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='0001310801688' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0001310801688
+      </td>
+      <td style="text-align:center;">
+        20190806
+      </td>
+      <td style="text-align:center;">
+        200009
+      </td>
+      <td>
+        人力資源部[Human Resources Dept.]
+      </td>
+      <td>
+        公告國泰金控數位暨數據科技發展中心數據生態發展部數據科技科林育慧等33人免兼/兼任本行相關職務。
+
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='0001310801687' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0001310801687
+      </td>
+      <td style="text-align:center;">
+        20190806
+      </td>
+      <td style="text-align:center;">
+        091028
+      </td>
+      <td>
+        人力資源部[Human Resources Dept.]
+      </td>
+      <td>
+        公告存匯作業管理部襄理吳怡蓉復職案，詳如說明，請 查照。
+
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='8030110800224' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        8030110800224
+      </td>
+      <td style="text-align:center;">
+        20190805
+      </td>
+      <td style="text-align:center;">
+        202328
+      </td>
+      <td>
+        授信作業管理部[Trade &amp; Loan Operations Dept.]
+      </td>
+      <td>
+        【貿易融資】檢送修訂後貿易融資作業處理要點、相關SOP及表單，自公告後次一營業日生效，詳如說明，請 查照。
+
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='6000010800384' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        6000010800384
+      </td>
+      <td style="text-align:center;">
+        20190805
+      </td>
+      <td style="text-align:center;">
+        193252
+      </td>
+      <td>
+        環球交易服務部[Global Transaction Service Dept.]
+      </td>
+      <td>
+        有關兆豐國際商業銀行股份有限公司自民國(下同)108年3月1日起已暫停提供「外幣結算平台」之美元巢式交易服務，特此重申，請轉知所屬勿再受理該項交易申請。
+
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='0000510800554' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0000510800554
+      </td>
+      <td style="text-align:center;">
+        20190805
+      </td>
+      <td style="text-align:center;">
+        175254
+      </td>
+      <td>
+        財富管理商品部[Wealth Management Product Dept.]
+      </td>
+      <td>
+        【理財KYC查檢表】公告修訂「理財KYC問卷覆核查檢表(覆核人員專用)」，並自108年8月8日起實施，惠請　查照。
+
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='0000510800556' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0000510800556
+      </td>
+      <td style="text-align:center;">
+        20190805
+      </td>
+      <td style="text-align:center;">
+        175105
+      </td>
+      <td>
+        財富管理商品部[Wealth Management Product Dept.]
+      </td>
+      <td>
+        【理財KYC】自108年8月8日起新增「客服KYC」評估管道，惠請 查照辦理。
+
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='8050510800464' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        8050510800464
+      </td>
+      <td style="text-align:center;">
+        20190805
+      </td>
+      <td style="text-align:center;">
+        171425
+      </td>
+      <td>
+        保險代理部[Insurance Agency Dept.]
+      </td>
+      <td>
+        【保險】公告「2020年美國百萬圓桌協會(MDRT)入選標準暨獎勵辦法」，如說明，請 知照。
+
+      </td>
+
+      <td style="text-align:center;">
+        Y
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='0000110800575' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0000110800575
+      </td>
+      <td style="text-align:center;">
+        20190805
+      </td>
+      <td style="text-align:center;">
+        093834
+      </td>
+      <td>
+        稽核室[Audit Dept.]
+      </td>
+      <td>
+
+        公告修訂「內部查核評等作業規則」及修訂前後對照表。
+      </td>
+
+      <td style="text-align:center;">
+        Y
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='0000710800480' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0000710800480
+      </td>
+      <td style="text-align:center;">
+        20190805
+      </td>
+      <td style="text-align:center;">
+        091843
+      </td>
+      <td>
+        法令遵循部[Compliance Dept.]
+      </td>
+      <td>
+        【教育訓練】公告上架8月份教育訓練課程，請查照。
+
+      </td>
+
+      <td style="text-align:center;">
+        Y
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='0001310801646' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0001310801646
+      </td>
+      <td style="text-align:center;">
+        20190805
+      </td>
+      <td style="text-align:center;">
+        090857
+      </td>
+      <td>
+        人力資源部[Human Resources Dept.]
+      </td>
+      <td>
+        公告信用卡作業部襄理許嘉恩等3人復職案，詳如說明，請 查照。
+
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='0001310801585' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0001310801585
+      </td>
+      <td style="text-align:center;">
+        20190802
+      </td>
+      <td style="text-align:center;">
+        174541
+      </td>
+      <td>
+        人力資源部[Human Resources Dept.]
+      </td>
+      <td>
+        為強化公司內部溝通，全行資訊網設有圖片廣宣、重要訊息推播、行事曆，歡迎申請使用。
+        &lt;font style=color:gray&gt;EIP offers banner ad, push notifications for important messages, and calendar
+        services. Applica
+      </td>
+
+      <td style="text-align:center;">
+        Y
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='0001710800171' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0001710800171
+      </td>
+      <td style="text-align:center;">
+        20190802
+      </td>
+      <td style="text-align:center;">
+        134521
+      </td>
+      <td>
+        資訊服務暨支援部[IT Service Management and Support Dept.]
+      </td>
+      <td>
+        【會議通知】OnDemand 報表系統，電子存放年限及所屬種類(必看、必印、備查)檢視討論
+
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='0001310801685' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0001310801685
+      </td>
+      <td style="text-align:center;">
+        20190802
+      </td>
+      <td style="text-align:center;">
+        121339
+      </td>
+      <td>
+        人力資源部[Human Resources Dept.]
+      </td>
+      <td>
+        【正式任用】公告高雄分行襄理陳裕文等14名人員正式任用，請查照。
+
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='0001310801674' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0001310801674
+      </td>
+      <td style="text-align:center;">
+        20190802
+      </td>
+      <td style="text-align:center;">
+        121251
+      </td>
+      <td>
+        人力資源部[Human Resources Dept.]
+      </td>
+      <td>
+        公告國際審查部陳昭偉等7名人員異動，請 查照。
+
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='9999910801994' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        9999910801994
+      </td>
+      <td style="text-align:center;">
+        20190802
+      </td>
+      <td style="text-align:center;">
+        105159
+      </td>
+      <td>
+        企金審查部[Corporate Credit Risk Management Dept.]
+      </td>
+      <td>
+        檢送本會第112期會訊如附件，請查照。
+
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='0000710800467' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0000710800467
+      </td>
+      <td style="text-align:center;">
+        20190801
+      </td>
+      <td style="text-align:center;">
+        185200
+      </td>
+      <td>
+        法令遵循部[Compliance Dept.]
+      </td>
+      <td>
+        【規章管理】公告自2019年8月起，敬請各總行單位之法遵主管於每月「法遵執行呈核公文」一併檢附新版「全行規章彙整表」、「總行海外管理規章清冊」之更新情形，詳如說明，請查照。
+
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='0001310801609' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0001310801609
+      </td>
+      <td style="text-align:center;">
+        20190801
+      </td>
+      <td style="text-align:center;">
+        173824
+      </td>
+      <td>
+        人力資源部[Human Resources Dept.]
+      </td>
+      <td>
+        公告資訊架構部郭源欣等57名人員到職及異動，請 查照。
+
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='8000010800647' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        8000010800647
+      </td>
+      <td style="text-align:center;">
+        20190801
+      </td>
+      <td style="text-align:center;">
+        083436
+      </td>
+      <td>
+        金融交易部[Financial Trading Dept.]
+      </td>
+      <td>
+        公告修訂本行「債券買賣總契約書」，詳如說明，請 查照。
+
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='0008610800064' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0008610800064
+      </td>
+      <td style="text-align:center;">
+        20190801
+      </td>
+      <td style="text-align:center;">
+        075302
+      </td>
+      <td>
+        海外資訊部[Overseas IT Dept.]
+      </td>
+      <td>
+        【驗收通知】辦理Oracle LRM模組與OBIEE報表工具第一階段驗收會議，請相關單位指派人員參加，請 查照。
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='0000710800452' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0000710800452
+      </td>
+      <td style="text-align:center;">
+        20190731
+      </td>
+      <td style="text-align:center;">
+        213834
+      </td>
+      <td>
+        法令遵循部[Compliance Dept.]
+      </td>
+      <td>
+
+        公布截至2019年6月之「全行重要規章及作業規範整理」，敬請　查照。 This is to announce the Internal Regulations of CUB by June, 2019
+
+      </td>
+
+      <td style="text-align:center;">
+        Y
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='6000010800371' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        6000010800371
+      </td>
+      <td style="text-align:center;">
+        20190731
+      </td>
+      <td style="text-align:center;">
+        170212
+      </td>
+      <td>
+        環球交易服務部[Global Transaction Service Dept.]
+      </td>
+      <td>
+        公告修訂「遠期信用狀賣斷【本行為買斷行】業務要點」(行銷代碼A092)」，新增「本行與大陸子行合作仲介式買斷」之操作模式，自108年8月1日生效，詳如說明，請 查照。
+
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='0009310800300' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0009310800300
+      </td>
+      <td style="text-align:center;">
+        20190731
+      </td>
+      <td style="text-align:center;">
+        162714
+      </td>
+      <td>
+        消金審查部[Consumer Credit Risk Management Dept.]
+      </td>
+      <td>
+        公佈本行108年8月1日起生效之『定儲利率指數-月變動（靈活利率指數）』、『基準利率』及『基本放款利率』。
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='0008510800114' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0008510800114
+      </td>
+      <td style="text-align:center;">
+        20190731
+      </td>
+      <td style="text-align:center;">
+        160115
+      </td>
+      <td>
+        資訊策略發展部[IT Strategy Dept.]
+      </td>
+      <td>
+        公告奉核定之本行「國泰世華商業銀行資訊總管理處系統技術標準作業規則」、「國泰世華商業銀行資訊總管理處供應商服務作業規則」及「國泰世華商業銀行資訊總管理處供應商服務管理規則」，惠請 查照。
+
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='6000010800369' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        6000010800369
+      </td>
+      <td style="text-align:center;">
+        20190731
+      </td>
+      <td style="text-align:center;">
+        132225
+      </td>
+      <td>
+        環球交易服務部[Global Transaction Service Dept.]
+      </td>
+      <td>
+        公告修訂「家福供應鏈融資要點」，自核定日之次一營業日起生效，敬請 查照。
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='0001310801614' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0001310801614
+      </td>
+      <td style="text-align:center;">
+        20190731
+      </td>
+      <td style="text-align:center;">
+        093904
+      </td>
+      <td>
+        人力資源部[Human Resources Dept.]
+      </td>
+      <td>
+        公告本行科級組織異動，請 查照。
+
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='8030110800220' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        8030110800220
+      </td>
+      <td style="text-align:center;">
+        20190730
+      </td>
+      <td style="text-align:center;">
+        183655
+      </td>
+      <td>
+        授信作業管理部[Trade &amp; Loan Operations Dept.]
+      </td>
+      <td>
+        【企金契據】檢送修訂後本行企金授信作業處理要點保證業務章節部分條文、契據、表單及貸前作業檢核表等，詳如說明，請　查照。
+
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='0000810801219' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0000810801219
+      </td>
+      <td style="text-align:center;">
+        20190730
+      </td>
+      <td style="text-align:center;">
+        160353
+      </td>
+      <td>
+        總務部[General Affairs Dept.]
+      </td>
+      <td>
+        檢送108年下半年度行舍電氣設備檢測行程表，請各單位於排訂之檢查日派員協助辦理，請 查照。
+
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='0000810801221' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0000810801221
+      </td>
+      <td style="text-align:center;">
+        20190730
+      </td>
+      <td style="text-align:center;">
+        160314
+      </td>
+      <td>
+        總務部[General Affairs Dept.]
+      </td>
+      <td>
+        公告營業單位停電緊急搶修流程，請 查照。
+
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='0009010800208' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0009010800208
+      </td>
+      <td style="text-align:center;">
+        20190730
+      </td>
+      <td style="text-align:center;">
+        152911
+      </td>
+      <td>
+        信用暨作業風管部[Risk Management Dept.]
+      </td>
+      <td>
+        2019年作業風險自評(RCSA) For 2019 Risk Control Self Assessment (RCSA)
+
+      </td>
+
+      <td style="text-align:center;">
+        Y
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='0009010800211' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0009010800211
+      </td>
+      <td style="text-align:center;">
+        20190730
+      </td>
+      <td style="text-align:center;">
+        152735
+      </td>
+      <td>
+        信用暨作業風管部[Risk Management Dept.]
+      </td>
+      <td>
+        公告修訂後「個人資料管理規則」、「個人資料當事人權利行使處理流程(SOP)」及「內部控制制度」請 查照。
+        &lt;font color=&quot;gray&quot;&gt;Please note the announcement of the amended &quot;Personal Information
+        Management Rules&quot;,
+      </td>
+
+      <td style="text-align:center;">
+        Y
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='8050510800457' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        8050510800457
+      </td>
+      <td style="text-align:center;">
+        20190730
+      </td>
+      <td style="text-align:center;">
+        144005
+      </td>
+      <td>
+        保險代理部[Insurance Agency Dept.]
+      </td>
+      <td>
+        【保險】自108年7月30日起開辦「國泰人壽漾安心住院醫療終身保險」等2款商品，如說明，請知照。
+
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='8050510800458' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        8050510800458
+      </td>
+      <td style="text-align:center;">
+        20190730
+      </td>
+      <td style="text-align:center;">
+        140359
+      </td>
+      <td>
+        保險代理部[Insurance Agency Dept.]
+      </td>
+      <td>
+        【保險】自108.8.1起，開辦「國泰產險旅遊不便險新專案」，詳如說明，請知照。
+
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='9999910801954' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        9999910801954
+      </td>
+      <td style="text-align:center;">
+        20190730
+      </td>
+      <td style="text-align:center;">
+        135931
+      </td>
+      <td>
+        存匯作業管理部[Cash Management Operations Dept.]
+      </td>
+      <td>
+        為維護跨行通匯業務順暢，有關「原住民姓名並列羅馬拼音者應使用完整姓名之因應作為」乙節，請依說明規定辦理。
+
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='0001310801662' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0001310801662
+      </td>
+      <td style="text-align:center;">
+        20190730
+      </td>
+      <td style="text-align:center;">
+        122106
+      </td>
+      <td>
+        人力資源部[Human Resources Dept.]
+      </td>
+      <td>
+
+        公告本行第三季員工楷模選拔開始，請各單位踴躍提報。 Call for Nomination of the Model Employee of the 3rd Quarter.
+      </td>
+
+      <td style="text-align:center;">
+        Y
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='0001310801650' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0001310801650
+      </td>
+      <td style="text-align:center;">
+        20190729
+      </td>
+      <td style="text-align:center;">
+        191346
+      </td>
+      <td>
+        人力資源部[Human Resources Dept.]
+      </td>
+      <td>
+        公告2019年度第二次人事評議委員會獎懲名單，請查照。
+      </td>
+
+      <td style="text-align:center;">
+        Y
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='8030110800215' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        8030110800215
+      </td>
+      <td style="text-align:center;">
+        20190729
+      </td>
+      <td style="text-align:center;">
+        180703
+      </td>
+      <td>
+        授信作業管理部[Trade &amp; Loan Operations Dept.]
+      </td>
+      <td>
+        檢送修訂後貿易融資作業處理要點、SOP、進/出口帳卡、檢核表及報表，自108年7月31日起生效實施，詳如說明，請 查照。
+
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='8030310800294' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        8030310800294
+      </td>
+      <td style="text-align:center;">
+        20190729
+      </td>
+      <td style="text-align:center;">
+        174719
+      </td>
+      <td>
+        企金審查部[Corporate Credit Risk Management Dept.]
+      </td>
+      <td>
+        公告「授信簽報書自動化系統」一鍵查詢新增異常整合查詢表及更新歸戶彙總表，訂於108年7月31日正式啟用，請 查照。
+
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='0001310801624' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0001310801624
+      </td>
+      <td style="text-align:center;">
+        20190729
+      </td>
+      <td style="text-align:center;">
+        150347
+      </td>
+      <td>
+        人力資源部[Human Resources Dept.]
+      </td>
+      <td>
+        公告華山分行陳韋亨等21名人員異動，請 查照。
+
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='0009010800196' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0009010800196
+      </td>
+      <td style="text-align:center;">
+        20190729
+      </td>
+      <td style="text-align:center;">
+        111756
+      </td>
+      <td>
+        信用暨作業風管部[Risk Management Dept.]
+      </td>
+      <td>
+        公告修訂「大陸地區無擔保授信限額管理規則」、「對東協國家銀行業限額管理規則」、「對中國銀行業限額管理規則」等三項規章，惠請　查照。
+
+      </td>
+
+      <td style="text-align:center;">
+        Y
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='8050510800456' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        8050510800456
+      </td>
+      <td style="text-align:center;">
+        20190726
+      </td>
+      <td style="text-align:center;">
+        182548
+      </td>
+      <td>
+        保險代理部[Insurance Agency Dept.]
+      </td>
+      <td>
+        【產險來函】通知國泰產險自108.08.01起，「機不可失」車險商品內容調整乙事，詳如說明，請 知照。
+
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='0009710800377' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0009710800377
+      </td>
+      <td style="text-align:center;">
+        20190726
+      </td>
+      <td style="text-align:center;">
+        182530
+      </td>
+      <td>
+        數位銀行部[Digital Banking Dept.]
+      </td>
+      <td>
+        茲公告　「人臉辨識服務」已開放行動銀行(MMB)人臉登入服務，目前開放的作業系統：不支援Face ID的iOS作業系統、Android作業系統版本6、7、8（預計今年9月開放版本9）
+
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='0009010800209' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0009010800209
+      </td>
+      <td style="text-align:center;">
+        20190726
+      </td>
+      <td style="text-align:center;">
+        172249
+      </td>
+      <td>
+        信用暨作業風管部[Risk Management Dept.]
+      </td>
+      <td>
+        檢送新訂定「聯想集團」之集團限額，請 查照。
+
+      </td>
+
+      <td style="text-align:center;">
+        Y
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='0001310801645' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0001310801645
+      </td>
+      <td style="text-align:center;">
+        20190726
+      </td>
+      <td style="text-align:center;">
+        114304
+      </td>
+      <td>
+        人力資源部[Human Resources Dept.]
+      </td>
+      <td>
+        【正式任用】公告信用卡暨金融資訊部襄理張婷𤥂等6名人員正式任用，請查照。
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='9999910801949' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        9999910801949
+      </td>
+      <td style="text-align:center;">
+        20190726
+      </td>
+      <td style="text-align:center;">
+        090048
+      </td>
+      <td>
+        國際審查部[International Credit Risk Management Dept.]
+      </td>
+      <td>
+        文化部函有關「促進文化發展」納入「上市上櫃企業社會責任實務守則」(CSR)實踐範疇，請本會轉知會員機構支持臺灣藝文發展一案。
+
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+    <tr>
+      <td id='0001210800385' class="NavOut" style="font-family: 標楷體" onmouseover="menu_onMouseOver()"
+        onmouseout="menu_onMouseOut()">
+        <!-- onclick="tblODoc_onClick()">-->
+        0001210800385
+      </td>
+      <td style="text-align:center;">
+        20190726
+      </td>
+      <td style="text-align:center;">
+        084255
+      </td>
+      <td>
+        財務會計部[Finance &amp; Accounting Dept.]
+      </td>
+      <td>
+        【會議通知】「資產負債管理(ALM)暨資金轉撥計價(FTP)業務諮詢及系統建置專案」啟動會議
+
+      </td>
+
+      <td style="text-align:center;">
+        N
+      </td>
+
+    </tr>
+
+  </table>
+</form>

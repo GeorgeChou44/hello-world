@@ -1,0 +1,301 @@
+H1
+{
+    BACKGROUND-COLOR: royalblue;
+    COLOR: lavender;
+    FONT-FAMILY: 標楷體;
+    FONT-SIZE: 24px;
+    TEXT-ALIGN:center
+}
+.NavOver
+{
+    BACKGROUND-COLOR: royalblue;
+    BORDER-BOTTOM: 2px inset;
+    BORDER-LEFT: 2px inset;
+    BORDER-RIGHT: 2px inset;
+    BORDER-TOP: 2px inset;
+    COLOR: gold;
+    CURSOR: hand;
+    FONT-FAMILY: 標楷體;
+    FONT-SIZE: 20px;
+    MARGIN: 2px;
+    PADDING-BOTTOM: 2px;
+    PADDING-LEFT: 3px;
+    PADDING-RIGHT: 3px;
+    PADDING-TOP: 2px;
+    TEXT-DECORATION: none
+}
+.NavOut
+{
+    BACKGROUND-COLOR: royalblue;
+    BORDER-BOTTOM: 2px outset;
+    BORDER-LEFT: 2px outset;
+    BORDER-RIGHT: 2px outset;
+    BORDER-TOP: 2px outset;
+    COLOR: #ffffff;
+    FONT-FAMILY: 標楷體;
+    FONT-SIZE: 20px;
+    MARGIN: 2px;
+    PADDING-BOTTOM: 2px;
+    PADDING-LEFT: 3px;
+    PADDING-RIGHT: 3px;
+    PADDING-TOP: 2px;
+    TEXT-DECORATION: none
+}
+.QNavOver
+{
+    BORDER-BOTTOM: 2px inset;
+    BORDER-LEFT: 2px inset;
+    BORDER-RIGHT: 2px inset;
+    BORDER-TOP: 2px inset;
+    COLOR: blue;
+    CURSOR: hand;
+    FONT-FAMILY: 標楷體;
+    FONT-SIZE: 20px;
+    MARGIN: 2px;
+    PADDING-BOTTOM: 2px;
+    PADDING-LEFT: 3px;
+    PADDING-RIGHT: 3px;
+    PADDING-TOP: 2px;
+    TEXT-DECORATION: underline
+}
+.QNavOut
+{
+    BORDER-BOTTOM: 2px outset;
+    BORDER-LEFT: 2px outset;
+    BORDER-RIGHT: 2px outset;
+    BORDER-TOP: 2px outset;
+    COLOR: blue;
+    FONT-FAMILY: 標楷體;
+    FONT-SIZE: 20px;
+    TEXT-DECORATION: underline;
+    MARGIN: 2px;
+    PADDING-BOTTOM: 2px;
+    PADDING-LEFT: 3px;
+    PADDING-RIGHT: 3px;
+    PADDING-TOP: 2px;
+    TEXT-DECORATION: underline
+}
+.ChoiceOver
+{
+    background-color: LawnGreen;
+}
+.ChoiceOut
+{
+    background-color: white;
+}
+BODY
+{
+    BACKGROUND-COLOR: white;
+    /*BACKGROUND-IMAGE: url(images/paper.gif);*/
+    FONT-FAMILY: 標楷體;
+    FONT-SIZE: 20px
+}
+TABLE
+{
+    BACKGROUND-COLOR: white;
+    BORDER-BOTTOM: silver 3px ridge;
+    BORDER-LEFT: silver 3px ridge;
+    BORDER-RIGHT: silver 3px ridge;
+    BORDER-TOP: silver 3px ridge;
+    FONT-FAMILY: 標楷體;
+    FONT-SIZE: 20px
+}
+TH
+{
+    BACKGROUND-COLOR: silver;
+    BORDER-BOTTOM: gray 1px solid;
+    BORDER-LEFT: silver 1px solid;
+    BORDER-RIGHT: gray 1px solid;
+    BORDER-TOP: silver 1px solid;
+    FONT-FAMILY: 標楷體;
+    FONT-SIZE: 20px;
+    FONT-WEIGHT: lighter
+}
+.TH1
+{
+    BACKGROUND-COLOR: silver;
+    BORDER-BOTTOM: gray 1px solid;
+    BORDER-LEFT: silver 1px solid;
+    BORDER-RIGHT: gray 1px solid;
+    BORDER-TOP: silver 1px solid;
+    FONT-FAMILY: 標楷體;
+    FONT-SIZE: 18px;
+    FONT-WEIGHT: lighter
+}
+TD
+{
+    BORDER-BOTTOM: gray 1px solid;
+    BORDER-LEFT: silver 1px solid;
+    BORDER-RIGHT: gray 1px solid;
+    BORDER-TOP: silver 1px solid;
+    FONT-FAMILY: 標楷體;
+    FONT-SIZE: 20px
+}
+.TTitle
+{
+    BACKGROUND-COLOR: royalblue;
+    BORDER-BOTTOM: gray 1px solid;
+    BORDER-LEFT: silver 1px solid;
+    BORDER-RIGHT: gray 1px solid;
+    BORDER-TOP: silver 1px solid;
+    COLOR:white;
+    FONT-FAMILY: 標楷體;
+    FONT-SIZE: 20px;
+    FONT-WEIGHT: lighter
+}
+.KeyText
+{
+    BACKGROUND-COLOR: white;
+    COLOR: royalblue;
+    FONT-FAMILY: 標楷體;
+    FONT-SIZE: 20px
+}
+.KeyText2
+{
+    BACKGROUND-COLOR: white;
+    COLOR: royalblue;
+    FONT-FAMILY: 標楷體;
+    FONT-SIZE: 20px
+}
+.KeyText3
+{
+    BACKGROUND-COLOR: white;
+    COLOR: royalblue;
+    FONT-FAMILY: 標楷體;
+    FONT-SIZE: 18px
+}
+INPUT
+{
+    FONT-FAMILY: 標楷體;
+    FONT-SIZE: 20px
+}
+SELECT
+{
+    FONT-FAMILY: 標楷體;
+    FONT-SIZE: 20px
+}
+.KeyNumber
+{
+    BACKGROUND-COLOR: white;
+    COLOR: royalblue;
+    FONT-FAMILY: 'Courier New';
+    FONT-SIZE: 20px;
+    FONT-WEIGHT: bolder;
+    FONT-FAMILY: 標楷體;
+    TEXT-ALIGN: right
+}
+P
+{
+    FONT-FAMILY: 標楷體;
+    MARGIN-BOTTOM: 0.2em;
+    MARGIN-TOP: 0.2em
+}
+.header
+{
+    FONT-FAMILY: 標楷體;
+    COLOR: red
+}
+.tab1
+{
+	FONT-FAMILY: 標楷體;
+    MARGIN-LEFT: 1em
+}
+.tab2
+{
+	FONT-FAMILY: 標楷體;
+    MARGIN-LEFT: 2em
+}
+.tab3
+{
+    FONT-FAMILY: 標楷體;
+    MARGIN-LEFT: 3em
+}
+.tab4
+{
+		position:relative;
+    border:0;
+    width:100%;
+}
+.tab5
+{
+		position:relative;
+    border:0;
+    width:90%;
+}
+.tab10
+{
+    FONT-FAMILY: 標楷體;
+    MARGIN-LEFT: 10em
+}
+.tab20
+{
+    FONT-FAMILY: 標楷體;
+    MARGIN-LEFT: 20em
+}
+.tabtip
+{
+    FONT-FAMILY: 標楷體;
+    border: 0px;
+}
+.tdtip
+{
+    FONT-FAMILY: 標楷體;
+    border: 0px;
+}
+.Message
+{
+    COLOR: red;
+    FONT-FAMILY: 標楷體;
+    FONT-SIZE: 20px;
+    TEXT-ALIGN:center
+}
+.Ans
+{
+    COLOR: blue;
+    MARGIN-TOP: 2em;
+    FONT-FAMILY: 標楷體;
+    FONT-SIZE: 20px
+}
+.Ans14
+{
+    COLOR: blue;
+    MARGIN-TOP: 2em;
+    FONT-FAMILY: 標楷體;
+    FONT-SIZE: 20px
+}
+.Ans15
+{
+    MARGIN-TOP: 2em;
+    FONT-FAMILY: 標楷體;
+    FONT-SIZE: 20px
+}
+.Caption14
+{
+    FONT-FAMILY: 標楷體;
+    FONT-SIZE: 20px
+}
+.TH1
+{
+    FONT-FAMILY: 標楷體;
+    FONT-SIZE: 17px;
+}
+.TD1
+{
+    FONT-FAMILY: 標楷體;
+    FONT-SIZE: 17px;
+}
+.Btn1
+{
+    FONT-FAMILY: 標楷體;
+    FONT-SIZE: 16px
+}
+.tdWrap
+        {
+            width: auto;
+            able-layout: fixed;
+            word-break: break-all;
+            word-wrap: break-word;
+        }
+
+
+
